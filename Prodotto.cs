@@ -39,6 +39,7 @@ namespace csharp_oop_shop
         public string getFullCode(){
             string fallBack = "";
 
+            //se il codice non raggiunge 8 numeri, faccio un ciclo dove concateno la stringa di fallback
             if (this.codice.ToString().Length < 8){
                 for (int i = this.codice.ToString().Length; i < 8; i++){
                     fallBack += "0";
