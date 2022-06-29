@@ -8,12 +8,12 @@ namespace csharp_oop_shop
 {
     public class Prodotto{
         private int codice { get; }
-        string nome { get; set; }
-        string descrizione { get; set;}
+        public string nome { get; set; }
+        public string descrizione { get; set;}
 
-        double prezzo { get; set; }
+        public double prezzo { get; set; }
 
-        int ivaPercentuale { get; set; }
+        public int ivaPercentuale { get; set; }
 
         public Prodotto(string nome, string descrizione, double prezzo, int ivaPercentuale)
         {

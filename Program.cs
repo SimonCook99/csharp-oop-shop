@@ -7,4 +7,13 @@ Console.WriteLine(p.getPrezzo());
 
 Console.WriteLine(p.getPrezzoConIVA());
 
+//modifica attributi tramite le properties
+p.nome = "T-shirt-elegante"; 
+p.prezzo = 25.25;
+
+Console.WriteLine(p.getPrezzo());
+
+Console.WriteLine(p.getPrezzoConIVA());
+
+
 Console.WriteLine(p.getFullName());
