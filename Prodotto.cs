@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace csharp_oop_shop
 {
     public class Prodotto{
-        private int codice { get; }
+        public int codice { get; }
         public string nome { get; set; }
         public string descrizione { get; set;}
 
@@ -34,6 +34,24 @@ namespace csharp_oop_shop
 
         public string getFullName(){
             return this.codice.ToString() + " " + this.nome;
+        }
+
+        public string getFullCode(){
+            string fallBack = "";
+
+            if (this.codice.ToString().Length < 8){
+                for (int i = this.codice.ToString().Length; i < 8; i++){
+                    fallBack += "0";
+
+                }
+                
+                fallBack += this.codice.ToString();
+                return fallBack;
+            }
+            else{
+                return this.codice.ToString();
+            }
+            
         }
 
 
